@@ -13,12 +13,30 @@ public class AppView {
         //ACCOUNT
 
         System.out.println("Informe a agência: ");
-        String agency = sc.nextLine();
+        String nr_agencia = sc.nextLine();
 
         System.out.println("Informe a conta: ");
-        String account = sc.nextLine();
+        String nr_conta = sc.nextLine();
 
-        Account account1 = new Account(agency, account);
+        System.out.println("Informe o id da conta: ");
+        Long id_conta = sc.nextLong();
+        sc.nextLine();
+
+        System.out.println("Informe o nome da conta: ");
+        String ds_nome = sc.nextLine();
+
+        System.out.println("Informe o tipo da conta (CORRENTE/POUPANCA): ");
+        String ds_tipo = sc.nextLine();
+
+        System.out.println("Informe o saldo atual: ");
+        Double vl_atual = sc.nextDouble();
+        sc.nextLine();
+
+        System.out.println("Informe o id do usuario: ");
+        Long id_usuario = sc.nextLong();
+        sc.nextLine();
+
+        Account account1 = new Account(nr_agencia, nr_conta, id_conta, ds_nome, ds_tipo, vl_atual, id_usuario);
 
         account1.showAccount();
 
