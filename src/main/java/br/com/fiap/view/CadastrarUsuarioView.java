@@ -1,7 +1,6 @@
 package br.com.fiap.view;
 import br.com.fiap.dao.UsuarioDao;
 import br.com.fiap.model.Usuario;
-
 import java.sql.SQLException;
 
 //Metodo Cadastrar usuário
